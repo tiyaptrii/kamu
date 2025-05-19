@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Anniversary</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Halaman Pembuka -->
+  <div class="cover" id="cover">
+    <h1>Untuk Kamu yang Tersayang 💌</h1>
+    <button onclick="openLetter()">💖 Buka Surat</button>
+  </div>
+
+  <!-- Konten Utama -->
+  <div class="container" id="main-content" style="display: none;">
+    <h1 class="title">💖 Hallo Mas 💖</h1>
+    <p class="message">
+      Halo mas, terimakasih ya sudah mau bertahan dengan aku, wanita rumit dan sulit untuk ditebak.
+      Terimakasih sudah menemani sampai 2 tahun lebih hingga detik ini, meskipun banyak rintangan dan lainnya.
+      Maaf kalo selama ini aku masih banyak kurangnya. Terimakasih sudah mau ngasih hal-hal terindah,
+      makasih udah nyempetin ketemu meski capek kerja. Makasih mas udah ngasih apa yang aku mau.
+      Terimakasih udah ngebuat aku diterima baik oleh keluargamu. Terimakasih... udah ngenalin ke ayah ibumu,
+      bahkan kamu bisa ngilangin rasa trauma aku. Terimakasih udah selalu sayang dan cinta sama aku.
+      Sampai berjumpa di tanggal 20 berikutnya atau mungkin sampai nanti kita bisa bersama selamanya. Love u💕
+    </p>
+
+    <h2>📸 Kenangan Kita</h2>
+    <div class="gallery">
+      <img src="images/IMG-20250519-WA0022.jpg" alt="foto1">
+      <img src="images/IMG-20250519-WA0023.jpg" alt="foto2">
+      <img src="images/IMG-20250519-WA0024.jpg" alt="foto3">
+      <img src="images/IMG-20250519-WA0025.jpg" alt="foto4">
+    </div>
+
+    <h2>🎥 Video Kenangan</h2>
+    <video controls width="100%">
+      <source src="vidio.mp4/WhatsApp Video 2025-05-19 at 20.03.31_bf38905a.mp4" type="video/mp4">
+      Browser Anda tidak mendukung video ini.
+    </video>
+  </div>
+
+  <!-- Script -->
+  <script>
+    function openLetter() {
+      document.getElementById('cover').style.display = 'none';
+      document.getElementById('main-content').style.display = 'block';
+    }
+
+    function toggleMusic() {
+      const music = document.getElementById("bg-music");
+      if (music.paused) {
+        music.play();
+      } else {
+        music.pause();
+      }
+    }
+  </script>
+</body>
+</html>
